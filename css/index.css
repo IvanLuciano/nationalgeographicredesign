@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  background-color: #F2F2F2;
+  margin: 0px; padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+button{
+  margin: 4px;
+  padding: 6px 4%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+
+}
+/* HEADER*/
+
+/* COLORES
+-amarillo: #FFD300;
+-beige: #F2F2F2;
+-gris oscuro:#282828;
+*/
+
+.header{
+  padding: 20px;
+  text-align: center;
+  background-color: #F2F2F2;
+}
+
+.pagination{
+  padding: 16px 35%; width: 30%;
+}
+
+.numeros{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+.footer{
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.linksFooter{
+  margin: 0px; padding-left: 15%; padding-right: 15%;
+  display: flex; justify-content: space-between;
+
+  color: white; font-weight: bold;
+  font-size: 15px;
+}
+
+.linksdelfooter{
+  color: white;
+  text-decoration: none;
+}
+
+.LogoIMG{
+  width: 12%;
+}
+
+/* SECCION DE BUSQUEDA*/
+
+.seccion_busqueda{
+  background-color: #282828;
+  padding: 16px 18%;
+}
+
+.sugerenciasBox{
+  background-color: #282828;
+  padding: 6px 18%;
+  padding-bottom: 24px;
+  text-decoration: none;
+}
+.sugerencias{
+  display: flex;
+  padding: 5px 0px;
+}
+.sugerencia{
+  display:flex;
+  width: auto;
+  font-size: 13px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 32px;
+  padding: 0px 20px;
+  margin: 0px 4px;
+}
+#sugerenciaDisabled{
+  color: #7E7E7E;
+  border: 1px solid #7E7E7E;
+}
+#sugerenciaEnabled{
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  text-decoration: none;
+}
+#sugerenciaEnabled:hover{
+  color: #FFD300;
+  border: 1px solid #FFD300;
+  text-decoration: none;
+  cursor: pointer;
+}
+#sugerenciaSelec{
+  position: absolute;
+  top: 167px;
+  left: 69%;
+  width: 115px;
+  height: 40px;
+  display: none;
+  background-color: #FFD948;
+  color: #414141;
+  border: 1px solid #FFD948;
+  text-decoration: none;
+}
+
+.recomendacionesBox{
+  background-color: #282828;
+  padding: 6px 18%;
+  color: white;
+}
+.recomendaciones{
+  display: flex;
+  background-color: #282828;
+}
+.recomendacion{
+  font-size: 13px;
+  padding: 12px;
+  width:100%;
+  height: auto;
+}
+
+.recoTexto{
+  position: absolute;
+  top: 305px;
+  left: 21.5%;
+  color: white;
+  font-size: 110%;
+}
+.recoTexto:hover{
+    cursor: pointer;
+}
+
+.menu{
+  padding: 0px 18% 0px 18%;
+  width:64%;
+  background-color: #282828;
+  align-content: center;
+
+}
+.menuHorizontal{
+  display: flex;
+  justify-content: space-around;
+}
+
+.NO-seleccionado{
+  color: white;
+  font-weight: 300;
+  background-color:#282828 ;
+  border: 2px solid #282828;
+}
+.SI-seleccionado{
+  color: white;
+  font-weight: 300;
+  background-color:#282828;
+  border: 2px solid #282828;
+  border-bottom: 3px solid #FFD300 ;
+
+}
+#botonTODOS , #botonNOTAS , #botonFOTO , #botonBLOG , #botonCURIOSIDADES , #botonLECTOR:hover {
+  cursor: pointer;
+  margin: 0px;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ARTICULOS*/
+.cuerpo{
+  margin: 32px 0px; padding-left: 18%; padding-right: 18%; width: 64%;
+  background-color: #F2F2F2;
+}
+
+.artLECTOR , #NOTAS , .artFOTO , .artBLOG , .artCURIOSIDADES{
+
+  margin: 28px 0px;
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+/* comps int */
+.textos{
+  width: 100%;
+  padding: 0px 16px;
+}
+.art_IMG{
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
+}
+.art_TITLE{
+  color: black;
+  width: 100%;
+  font-size: 99%;
+  margin: 0px;
+  text-decoration: none;
+}
+a:visited{
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+.art_DESC{
+  font-size: 85%;
+  margin: 8px;
+}
+
+.art_autorYetiqueta{
+  display: flex;
+}
+.art_AUTOR{
+  font-size: 85%;
+}
+.art_CLASE{
+  margin-left: auto;
+  font-size: 85%;
+  padding: 0px 6px;
+  color:#282828;
+  border-right: 3px solid #FFD300;
+  border-left: 3px solid  #FFD300;
+}
+.art_CLASEReco{
+  display: absolute;
+  display: inline-block;
+  padding: 0px 6px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 45px;
+  font-size: 80%;
+  color: white;
+  border-right: 3px solid #FFD300;
+  border-left: 3px solid  #FFD300;
+}
+
+
+
+.cuerpo_GRILLA{
+  display: flex;
+  justify-content: center;
+}
+.art_GRILLA{
+  width: auto;
+  height: 280px;
+  padding: 8px;
+}
+
+.art_GRILLA_IMG{
+  width: 280px;
+  height: 280px;
+  margin: 0px 4px;
+}
+
+
+.textosGrilla{
+  color: white;
+  width: 100%;
+  display: none;
+}
+.art_TITLE_Grilla{
+  text-align: center;
+  position: absolute;
+  top: 595px;
+  left: -290px;
+  width: 100%;
+  font-size: 99%;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.art_AUTOR_Grilla{
+  position: absolute;
+  top: 660px;
+  left: 265px;
+  font-size: 80%;
+}
+.art_CLASE_Grilla{
+  position: absolute;
+  top: 690px;
+  left: 325px;
+  margin-left: auto;
+  font-size: 85%;
+  padding: 0px 6px;
+  color: white;
+  border-right: 3px solid #FFD300;
+  border-left: 3px solid  #FFD300;
+}
+
+.opacidad{
+  display: none;
+  margin-left: 4px;
+  position: absolute;
+  width: 280px;
+  height: 178px;
+  border: 0px solid black;
+  border-radius: 12px;
+  background-color: black;
+  opacity: .4;
+}
